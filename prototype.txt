@@ -1,0 +1,36 @@
+function student(Name,Rollno,phy,chm,math)
+{
+this.name=Name;
+this.rollno=Rollno;
+this.phy=phy;
+this.chm=chm;
+this.math=math;
+this.tot=function(){
+sum=0;
+sum+= this.phy+this.chm+this.math;
+return sum;
+}
+student.prototype.total = function(){
+console.log('total marks obtained is :' +this.tot());
+}
+student.prototype.per= function(){
+console.log("total per obtained is "  +this.tot()/3);
+}
+student.prototype.grade=function(){
+if(this.tot()/3>=90)
+  console.log(`grade of ${this.name} is: + A1`);
+else if(this.tot()/3>=80 && this.tot()/3<90)
+   console.log(`grade of ${this.name} is: A2`);
+else if(this.tot()/3>=70 && this.tot()/3<80)
+   console.log(`grade of ${this.name} is: B1`);
+else if(this.tot()/3>=60 && this.tot()/3<70)
+   console.log(`grade of ${this.name} is: B2`);
+else 
+   console.log('bed performance')
+}
+student.prototype.report=function(){
+    console.log(this.total());
+    console.log(this.per());
+	console.log(this.grade());
+	}
+} 
