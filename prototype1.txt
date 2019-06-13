@@ -33,3 +33,46 @@ Student.prototype.report=function(){
    this.per();
    this.grade();
 } 
+ƒ (){
+   this.total();
+   this.per();
+   this.grade();
+}
+
+var a=new Student(15,"ram",0,0,0)
+undefined
+a.total();
+VM248:14 total marks obtained is :0
+undefined
+a.grade();
+VM248:29 bed performance
+undefined
+var nishant=new Student(15,"nishant",40,60,70);
+undefined
+nishant.total();
+VM248:14 total marks obtained is :170
+undefined
+nishant.per();
+VM248:17 total per obtained is 56.666666666666664
+undefined
+nishant.grade();
+VM248:29 bed performance
+undefined
+nishant.report();
+VM248:14 total marks obtained is :170
+VM248:17 total per obtained is 56.666666666666664
+VM248:29 bed performance
+undefined
+var ankit=new Student(15,"ankit",140,60,170);
+undefined
+ankit.total();
+VM248:14 total marks obtained is :370
+undefined
+ankit.per();
+VM248:17 total per obtained is 123.33333333333333
+undefined
+ankit.report();
+VM248:14 total marks obtained is :370
+VM248:17 total per obtained is 123.33333333333333
+VM248:21 grade of 15 is: + A1
+undefined
