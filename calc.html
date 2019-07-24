@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link href="style4.css" rel="stylesheet">
+	<script>
+	function eq(){
+		f=document.getElementById("x").value
+		document.getElementById("x").value=eval(f)
+	}
+	function add(){
+		document.getElementById("x").value +="+"
+	}
+	function sub(){
+		document.getElementById("x").value +="-"
+	}
+	function multi(){
+		document.getElementById("x").value +="*"
+	}
+	function div(){
+		document.getElementById("x").value +="/"
+	}
+	function mod(){
+		document.getElementById("x").value +="%"
+	}
+	function clean(){
+		document.getElementById("x").value = " "
+	}
+	function back(){
+		document.getElementById("x").value= Math.floor(document.getElementById("x").value/10) 
+	}
+	function one(){
+		document.getElementById("x").value +="1"
+	}
+	function two(){
+		document.getElementById("x").value +="2"
+	}
+	function three(){
+		document.getElementById("x").value +="3"
+	}
+	function four(){
+		document.getElementById("x").value +="4"
+	}
+	function five(){
+		document.getElementById("x").value +="5"
+	}
+	function six(){
+		document.getElementById("x").value +="6"
+	}
+	function seven(){
+		document.getElementById("x").value +="7"
+	}
+	function eight(){
+		document.getElementById("x").value +="8"
+	}
+	function nine(){
+		document.getElementById("x").value +="9"
+	}
+	function zero(){
+		document.getElementById("x").value +="0"
+	}
+	function dzero(){
+		document.getElementById("x").value +="00"
+	}
+	function mix(){
+		document.getElementById("x").value +="-"
+	}
+	function square(){
+		document.getElementById("x").value = Math.pow(document.getElementById("x").value,2)
+	}
+	function cube(){
+		document.getElementById("x").value = Math.pow(document.getElementById("x").value,3)
+	}
+	function sqrt(){
+		document.getElementById("x").value = Math.sqrt(document.getElementById("x").value)
+	}
+	function reci(){
+		document.getElementById("x").value = 1/document.getElementById("x").value
+	}
+	function dot(){
+		document.getElementById("x").value +="."
+	}
+	</script>
+	</head>
+	<body>
+	<div style="background-color:blue;margin-left:auto;margin-right:auto;padding:30px;width:200px;height:250px;text-align:center">
+	<div class="cal1"><i class="fas fa-calculator">CALCULATOR</i>
+	<br>
+	</div>
+	<div class="cal">
+		<input type="text" id="x" placeholder="0"/>
+	<br><br>
+	<input type="submit" value="C" onclick="clean()"/>&nbsp;
+	<input type="submit" value="<--" onclick="back()"/>&nbsp;
+	<input type="submit" value="+/-" onclick="mix()"/>&nbsp;
+	<input type="submit" value="x^2" onclick="square()"/>&nbsp;
+	<input type="submit" value="x^3" onclick="cube()"/>&nbsp;
+	<br><br>
+	<input type="submit" value="7" onclick="seven()"/>&nbsp;
+	<input type="submit" value="8" onclick="eight()"/>&nbsp;
+	<input type="submit" value="9" onclick="nine()"/>&nbsp;
+	<input type="submit" value="/" onclick="div()"/>&nbsp;
+	<input type="submit" value="sqrt" onclick="sqrt()"/>&nbsp;
+	<br><br>
+	<input type="submit" value="4" onclick="four()"/>&nbsp;
+	<input type="submit" value="5" onclick="five()"/>&nbsp;
+	<input type="submit" value="6" onclick="six()"/>&nbsp;
+	<input type="submit" value="*" onclick="multi()"/>&nbsp;
+	<input type="submit" value="%" onclick="mod()"/>&nbsp;
+	<br><br>
+	<input type="submit" value="1" onclick="one()"/>&nbsp;
+	<input type="submit" value="2" onclick="two()"/>&nbsp;
+	<input type="submit" value="3" onclick="three()"/>&nbsp;
+	<input type="submit" value="." onclick="dot()"/>&nbsp;
+	<input type="submit" value="1/x" onclick="reci()"/>&nbsp;
+	<br><br>
+	<input type="submit" value="0" onclick="zero()"/>&nbsp;
+	<input type="submit" value="00" onclick="dzero()"/>&nbsp;
+	<input type="submit" value="=" onclick="eq()"/>&nbsp;
+	<input type="submit" value="+" onclick="add()"/>&nbsp;
+	<input type="submit" value="-" onclick="sub()"/>&nbsp;
+	
+	
+	
+	</div>
+	</body>
+</html>
